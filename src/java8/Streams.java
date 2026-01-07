@@ -1,8 +1,6 @@
 package java8;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -53,5 +51,11 @@ public class Streams {
 
         employees.stream().max(Comparator.comparing( Employee::getSalary)).get();
 
+
+        int[] arr = {1,1,3,4,2,3,4,5,3};
+
+       Map<Integer, Long> occurence = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        System.out.print(occurence);
     }
 }

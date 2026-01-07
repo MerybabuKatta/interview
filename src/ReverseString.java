@@ -13,7 +13,7 @@ public class ReverseString {
 //        sb.reverse();
 //        System.out.println(sb.toString());
 
-        String reversed = new StringBuilder(str).reverse().toString();
-        System.out.println(reversed);
+       // String reversed = new StringBuilder(str).reverse().toString();
+       // System.out.println(reversed);
     }
 }
