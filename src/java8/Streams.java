@@ -1,6 +1,5 @@
 package java8;
 
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 import java.util.function.Function;
@@ -18,7 +17,7 @@ public class Streams {
         // find duplicate characters in string
 
 //        String str2 = "programming";
-//        str2.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+//        str2.chars().mapToObj(c -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  > (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
 //                .entrySet().stream().filter(entry -> entry.getValue() > 1).forEach(System.out::println);
 
         //count occurence of each element in an array
@@ -100,6 +99,14 @@ public class Streams {
 //        // Convert strig to uppercase
 //        List<String> list = Arrays.asList("java","spring");
 //        list.stream().map(String::toUpperCase).forEach(System.out::println);
+
+        // find largest element
+          int[] arr = {10,20,30,40,50};
+//        int result = Arrays.stream(arr).boxed().sorted(Comparator.reverseOrder()).findFirst().get();
+//        System.out.println(result);
+
+          int max = Arrays.stream(arr).max().getAsInt();
+        System.out.println(max);
     }
 }
 

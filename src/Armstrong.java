@@ -10,6 +10,5 @@ public class Armstrong {
         }
         System.out.println(sum==num? "armstrong" : "not armstrong");
 
-
     }
 }
